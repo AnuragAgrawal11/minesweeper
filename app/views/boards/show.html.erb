@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-12 text-center">
+    <h1><%= @board.name %></h1>
+    <p><strong>Created by <%= @board.email %></strong></p>
+    <div class="col-12 text-center"><%= render partial: "board", locals: { board: @board } %></div>
+  </div>
+</div>

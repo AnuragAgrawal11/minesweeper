@@ -1,4 +1,7 @@
 <div class="container mt-5 center">
+  <div class="text-center mt-4" style="float: right">
+    <%= link_to 'Create new board', new_board_path, class: 'btn btn-info float-right' %>
+  </div>
   <h1 class="text-center">Recent Boards</h1>
   <div class="row mt-4">
     <% @boards.each do |board| %>
@@ -14,7 +17,5 @@
     <% end %>
   </div>
   <%= paginate @boards, param_name: 'page' %>
-  <!--<div class="text-center mt-4">
-    <%#= link_to 'View All Generated Boards', boards_path %>
-  </div>-->
+
 </div>

@@ -5,7 +5,7 @@
   <h1 class="text-center">Recent Boards</h1>
   <div class="row mt-4">
     <% @boards.each do |board| %>
-      <div class="col-md-4 mb-4 bg-warning " style="margin-right: 10px">
+      <div class="col-md-4 mb-4 bg-warning " style="margin-right: 10px;margin-bottom:10px">
         <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title"><strong>Board Title:</strong> <%= link_to board.name, board_path(board) %></h5>
